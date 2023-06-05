@@ -1,6 +1,6 @@
 # wm tool
 
-DISCLAIMER: I didn't write this. I just discover this tool in [github0null/w800_cmake_sdk/tools/w800](https://github.com/github0null/w800_cmake_sdk/tree/master/tools/w800) and add a `CMakeLists.txt` to build it.
+**DISCLAIMER:** I didn't write this. I just discover this tool in [github0null/w800_cmake_sdk/tools/w800](https://github.com/github0null/w800_cmake_sdk/tree/master/tools/w800) and add a `CMakeLists.txt` to build it.
 
 (Also found in [IOsetting/wm-sdk-w806](https://github.com/IOsetting/wm-sdk-w806), so I think it comes with the origin SDK)
 
@@ -71,5 +71,5 @@ options:
 example from [here](https://github.com/github0null/w800_cmake_sdk/blob/243bee265ad73515025a440b033f05821420a3ce/tools/flash_firmware.sh.in#L43)
 
 ```bash
-./wm_tool -dl firmware.fls -ws 2M -ds 2M -rs rts -c $port -sl str -ws 115200
+./wm_tool -dl firmware.fls -ws 2M -ds 2M -rs rts -c /dev/cu.wchusbserial11110 -sl str -ws 115200
 ```
